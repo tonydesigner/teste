@@ -1,0 +1,33 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+html,body{height: 100vh;}
+
+.center{display: flex;justify-content: center;align-items: center;}
+.margin{display: flex;justify-content: space-around;align-items: center;}
+.space{display: flex;justify-content: space-between;align-items: center;}
+
+.brd{border: 1px solid;}
+
+.container{height: 650px; padding: 1em;}
+h1{text-align: center;}
+.acesso, .items, .depItems{height: 600px; margin:2em auto;flex-wrap: wrap;}
+.acesso, .items, depItems a{text-decoration: none;}
+.lg {max-width: 650px;height: 350px;}
+.alt{height: 250px;}
+.table{max-width: 750px; margin: 0 auto;}
+
+button{width: 288px; height: 155px;color: #fff; font-size: 16pt; border:0; border-radius: 1em; cursor: pointer;background:linear-gradient(#555555,#272727); }
+
+.dados{display: none;}
+.incluir{display: none;}
+
+table{width: 100%; text-align: left;background-color: #ccc;}
+table td{padding: .5em; }
+
+@media (max-width: 768px){
+  .container{height: auto;}
+  .acesso, .items, .dep{height: auto;}
+  .alt{height: auto; text-align: center;}
+  button{margin: 1em 0;}
+  .dados{ position: absolute; top: 50%; left: 20%;}
+  .incluir{ position: absolute; top: 50%; left: 0;}
+}
